@@ -34,7 +34,7 @@ chmod +x main.sh
 - zsh、fish：两个好用的shell，装完可以自己选
 - libreoffice：办公套件，写文档做表格
 - kitty：终端模拟器，比自带的舒服
-- vim、nvim、nano、helix：四个编辑器，挑顺手的用
+- vim、nvim、nano、helix（hx）：四个编辑器，挑顺手的用
 - fonts-jetbrains-mono、fonts-noto-cjk：字体
 - fcitx5全家桶：中文输入法（含rime）
 - vlc：本地播放器，几乎啥格式都能放
