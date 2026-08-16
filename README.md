@@ -44,6 +44,8 @@ chmod +x main.sh
 - gnome-todo：桌面待办事项
 - broadcom-sta-dkms：博通无线网卡驱动
 
+后面内容添加了 pythoon java lua 等编程语言的依赖，望周知
+
 ## 注意事项（划重点）
 
 1. 一定得是Debian系的系统，Arch、Fedora那些用不了，别乱试
