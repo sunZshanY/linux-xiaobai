@@ -19,7 +19,7 @@ uname -r
 #第3步：开始装软件，东西有点多，慢慢等，泡杯茶吧
 echo ""
 echo "第三步：开始安装软件（时间比较久，别关终端）"
-sudo apt install -y git zsh fish libreoffice kitty vim nvim nano helix fonts-jetbrains-mono fonts-noto-cjk \
+sudo apt install -y git zsh fish libreoffice kitty vim nvim nano hx fonts-jetbrains-mono fonts-noto-cjk \
   fcitx5 fcitx5-qt fcitx5-rime fcitx5-chinese-addons gnome-todo broadcom-sta-dkms vlc cmake make clang blender obs-studio
 
 echo ""
