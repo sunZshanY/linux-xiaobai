@@ -11,14 +11,8 @@ echo ""
 echo "第一步：更新软件源（需要输入密码）"
 sudo apt update && sudo apt upgrade -y
 
-#第2步：确认下自己的linux内核版本，等会装网卡驱动要用
-echo ""
-echo "第二步：看看当前内核版本"
-uname -r
-
-#第3步：开始装软件，东西有点多，慢慢等，泡杯茶吧
-echo ""
-echo "第三步：开始安装软件（时间比较久，别关终端）"
+#第2步：开始装软件，东西有点多，慢慢等，泡杯茶吧
+echo "第二步：开始安装软件（时间比较久，别关终端）"
 sudo apt install -y git zsh fish libreoffice kitty vim nvim nano hx fonts-jetbrains-mono fonts-noto-cjk \
   fcitx5 fcitx5-qt fcitx5-rime fcitx5-chinese-addons gnome-todo broadcom-sta-dkms vlc cmake make clang blender obs-studio
 
