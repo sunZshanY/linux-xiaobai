@@ -32,9 +32,9 @@ chmod +x main.sh
 
 - git：代码仓库工具
 - zsh、fish：两个好用的shell，装完可以自己选
-- libreoffice：办公套件，写文档做表格
+- libreoffice：办公套件，写文档做表格 （有LibreOffice Write Draw .....）
 - kitty：终端模拟器，比自带的舒服
-- vim、nvim、nano、helix（hx）：四个编辑器，挑顺手的用
+- vim、nvim、nano、helix（hx）：四个编辑器，挑顺手的用 (想美化的可以去搞LazyVim或者是其他的呢)
 - fonts-jetbrains-mono、fonts-noto-cjk：字体
 - fcitx5全家桶：中文输入法（含rime）
 - vlc：本地播放器，几乎啥格式都能放
@@ -42,7 +42,7 @@ chmod +x main.sh
 - obs-studio：录屏和直播
 - cmake、make、clang：以后写代码/编译的时候要用
 - gnome-todo：桌面待办事项
-- broadcom-sta-dkms：博通无线网卡驱动
+- broadcom-sta-dkms：博通无线网卡驱动 （仅限Mac或者其他用户使用）
 
 后面内容添加了 pythoon java lua 等编程语言的依赖，望周知
 
