@@ -1,7 +1,7 @@
 # 此为新手专用的一键下载脚本（半完全版本）
 > Omia 2026.08.16
 ---
-**需注意**：**此为Debian系用户专用（包括Ubuntu系统（Xubuntu、Kubuntu、Lubuntu）、Linux Mint（Cinnamon、XFCE、MATE）、Kali Linux.....等关于Debian的发行版本）**
+**需注意**：**此为Debian系用户专用（包括Ubuntu系统（Xubuntu、Kubuntu、Lubuntu）、Linux Mint（Cinnamon、XFCE、MATE、LXQt）、Kali Linux.....等关于Debian的发行版本）**
 ---
 ## 接下来开始讲解一键下载脚本的使用方法
 
