@@ -49,9 +49,7 @@ fi
 
 echo ">>> 第一步：更新软件源"
 
-sudo apt update
-
-sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 
 
 
@@ -168,62 +166,153 @@ fi
 
 
 # =====================================================
-# 4. 安装软件环境
+# 4. 安装中文输入法
 # =====================================================
 
 
 echo ""
-echo ">>> 第四步：安装常用软件"
+echo ">>> 第四步：安装中文输入法"
+
+
+echo "请选择中文输入法（推荐Fcitx5，中文输入体验更好）"
+read -p "请选择输入法 [1:Fcitx5(推荐) 2:Ibus]: " number
+
+
+# 直接回车默认Fcitx5
+
+number=${number:-1}
+
+
+case "$number" in
+
+    1)
+
+
+        echo ""
+        echo "已选择 Fcitx5，正在安装..."
+
+
+        sudo apt install -y fcitx5 fcitx5-chinese-addons fcitx5-rime fcitx5-frontend-gtk3 fcitx5-frontend-qt5
+
+
+        if [ $? -eq 0 ]; then
+
+            echo "Fcitx5 安装成功"
+
+            echo "重启后配置环境变量:"
+            echo "GTK_IM_MODULE=fcitx"
+            echo "QT_IM_MODULE=fcitx"
+            echo "XMODIFIERS=@im=fcitx"
+
+        else
+
+            echo "Fcitx5 安装失败"
+
+        fi
+
+
+        ;;
+
+    2)
+
+
+        echo ""
+        echo "已选择 Ibus，正在安装..."
+
+
+        sudo apt install -y ibus ibus-libpinyin ibus-rime
+
+
+        if [ $? -eq 0 ]; then
+
+            echo "Ibus 安装成功"
+
+            echo "重启后执行 ibus-setup 进行配置"
+
+        else
+
+            echo "Ibus 安装失败"
+
+        fi
+
+
+        ;;
+
+    *)
+
+
+        echo ""
+        echo "无效选择，默认安装 Fcitx5..."
+
+
+        sudo apt install -y fcitx5 fcitx5-chinese-addons fcitx5-rime
+
+
+        ;;
+
+esac
+
+
+# =====================================================
+# 5. 安装常用软件
+# =====================================================
+
+
+echo ""
+echo ">>> 第五步：安装常用软件"
+
+
+# Debian系包名不同: Debian为hx，Ubuntu为helix
+
+if apt-cache show helix >/dev/null 2>&1; then
+
+    HELIX_PKG=helix
+
+else
+
+    HELIX_PKG=hx
+
+fi
 
 
 sudo apt install -y \
-
+cowsay\
+pacman\
+hello \
 git \
 zsh \
 fish \
-kitty \
+python3 \
+openjdk-25-jdk \
+lua5.4 \
 vim \
 neovim \
-nano \
-helix \
-\
-fonts-jetbrains-mono \
-fonts-noto-cjk \
-\
-fcitx5 \
-fcitx5-qt \
-fcitx5-rime \
-fcitx5-chinese-addons \
-\
-libreoffice \
-vlc \
-firefox-esr \
-\
-cmake \
-make \
-clang \
-gcc \
-g++ \
-\
-python3 \
-python3-pip \
-python3-venv \
-python3-dev \
-\
-openjdk-21-jdk \
-\
-lua5.4 \
-luarocks \
-\
+curl \
+wget \
+rustc \
+obs-studio \
 blender \
-obs-studio
+gimp \
+emacs \
+kitty \
+libreoffice 
 
 
+if [ $? -eq 0 ]; then
+
+    echo "常用软件安装成功"
+
+else
+
+    echo "部分软件安装失败"
+    echo "请先执行 sudo apt update 后重试"
+
+fi
 
 
 
 # =====================================================
-# 5. 环境检测
+# 6. 环境检测
 # =====================================================
 
 
