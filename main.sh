@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 # =====================================================
 # Debian系Linux新手一键配置脚本
 #
@@ -295,7 +295,10 @@ blender \
 gimp \
 emacs \
 kitty \
-libreoffice 
+libreoffice \
+obs-studio \
+cmake \
+clang \
 
 
 if [ $? -eq 0 ]; then
