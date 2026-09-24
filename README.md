@@ -1,7 +1,7 @@
 # 此为新手专用的一键下载脚本（半完全版本）
 > Omia 2026.09-22(更新1.0.1版本)
 ---
-**需注意**：**此为Debian系用户专用（包括Ubuntu系统（Xubuntu、Kubuntu、Lubuntu）、Linux Mint（Cinnamon、XFCE、MATE、LXQt）、Kali Linux.....等关于Debian的发行版本）**
+**需注意**：**此为Debian系用户专用（包括Ubuntu（Xubuntu、Kubuntu、Lubuntu）、Linux Mint（Cinnamon、XFCE、MATE）、Kali Linux.....等关于Debian的发行版本）**
 ---
 ## 接下来开始讲解一键下载脚本的使用方法
 
@@ -25,6 +25,14 @@ chmod +x main.sh
 ./main.sh
 ```
 然后就等着就行，中途会要你输一次密码（输密码的时候屏幕上啥都不显示，这是正常的，输完直接回车）。
+
+#### 或者是这样
+```sh
+sh main.sh
+```
+
+这样子会更加简单
+
 
 ---
 
