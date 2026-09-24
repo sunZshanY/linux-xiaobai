@@ -42,7 +42,7 @@ sh main.sh
 - zsh、fish：两个好用的shell，装完可以自己选
 - libreoffice：办公套件，写文档做表格 （有LibreOffice Write Draw .....）
 - kitty：终端模拟器，比自带的舒服
-- vim、nvim、nano、helix（hx）：四个编辑器，挑顺手的用 (想美化的可以去搞LazyVim或者是其他的呢)
+- vim、neovim、nano、helix（hx）：四个编辑器，挑顺手的用 (想美化的可以去搞LazyVim或者是其他的呢)
 - fonts-jetbrains-mono、fonts-noto-cjk：字体
 - fcitx5全家桶：中文输入法（含rime）
 - vlc：本地播放器，几乎啥格式都能放
@@ -61,6 +61,13 @@ sh main.sh
 3. broadcom-sta-dkms是博通网卡的驱动，如果你电脑不是博通网卡，可以把这行删掉再运行，能省不少时间
 4. 如果中途哪个包装失败了，先 `sudo apt update` 一下再重新跑一遍
 
+#### 此为上个版本（2026.08.16） For Version 1.0 有些许删动，望周知
+
+#### 本次更新(2026/9/24)
+
+  1.更新输入法选择: fcitx5/Ibus
+  2.新增加了emacs文本编译器、gimp图片处理器、各个编译器环境、以及curl和wget的增加（curl为URL客户端工具、wget为下载工具）
+  3.新增加cowsay和pacman、hello（使用方法为 cowsay "牛来" ，pacman为吃豆人游戏，hello跟cowsay用法一致（但不多））
 ---
 
 有问题提issues，觉得有用点个star，救救孩子吧~
